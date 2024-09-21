@@ -1,4 +1,3 @@
-import React from "react";
 import { useForm, SubmitHandler } from "react-hook-form";
 
 type Inputs = {
@@ -10,7 +9,6 @@ type Inputs = {
 const App = () => {
   const {
     register,
-    watch,
     handleSubmit,
     formState: { errors },
   } = useForm<Inputs>();
